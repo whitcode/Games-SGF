@@ -2,6 +2,7 @@ package Games::SGF;
 
 use strict;
 use warnings;
+no warnings 'recursion';
 use Carp qw(carp croak confess);
 use enum qw( 
          :C_=1 BLACK WHITE
