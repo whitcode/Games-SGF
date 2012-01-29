@@ -111,7 +111,7 @@ HELP
 # now do the work
 
 my $sgf = new Games::SGF::Go(Warn => $debug, Debug => $debug);
-my $util = new Games::SGF::Util(SGF => $sgf);
+my $util = new Games::SGF::Util( $sgf);
 if( $input ) {
    $sgf->readFile($input)
       or die "Failed to read '$input': " . $sgf->Fatal . "\n";
