@@ -12,7 +12,7 @@ my $distance = 5;
 my $num = -1;
 my $out_dir = "sgf_save";
 
-$help = 1 unless GetOptions( "file=s"     => \$filename,
+$help = 1 unless GetOptions( "input=s"     => \$filename,
                              "debug"      => \$debug,
                              "help"       => \$help,
                              "exclusive"       => \$exclusive,
@@ -24,7 +24,7 @@ if( $help ) {
    print <<HELP;
 
 sgf_break options:
-   --file=STRING      Sets the sgf file the break apart
+   --input=STRING      Sets the sgf file the break apart
    --debug            Sets Games::SGF::DEBUG
    --distance=NUMBER  Sets the max distance of a move to count as
                       part of a sequence
@@ -61,8 +61,8 @@ $sgf->readFile($filename)
    }
    if( $sgf->next ) {
       redo;
-   } elsif( $sgf->variations ) {
-      $sgf->gotoVariation(0);
+   } elsif( $sgf->branches ) {
+      $sgf->gotoBranch(0);
       redo;
    }
    # fall out
