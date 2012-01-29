@@ -265,17 +265,9 @@ You can also look for information at:
 
 =over 4
 
-=item * RT: CPAN's request tracker
+=item * GitHub Repository
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Games-SGF>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Games-SGF>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Games-SGF>
+L<http://github.com/whitcode/Games-SGF>
 
 =item * Search CPAN
 
@@ -285,7 +277,7 @@ L<http://search.cpan.org/dist/Games-SGF>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2008 David Whitcomb, all rights reserved.
+Copyright 2012 David Whitcomb, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
